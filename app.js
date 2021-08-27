@@ -37,48 +37,39 @@ const reviews = [
   },
   {
     id: 5,
-    name: "bill anderson",
-    job: "the boss",
+    name: "hanna",
+    job: "Student",
     img:
-      "./images/second.jfif",
+      "./images/first.jfif",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+    "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
   },
   {
     id: 6,
-    name: "bill anderson",
-    job: "the boss",
+    name: "bill gates",
+    job: "the billionare",
     img:
     "./images/fourth.jfif",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+      "I love Money and windows, and yeah I hate apples ,all kinds of them",
   },
   {
     id: 7,
-    name: "bill anderson",
-    job: "the boss",
+    name: "Jenny",
+    job: "the secretary",
     img:
-    "./images/second.third",
+    "./images/fifth.jfif",
     text:
       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
   {
     id: 8,
     name: "bill anderson",
-    job: "the boss",
+    job: "the manager",
     img:
-    "./images/first.jfif",
+    "./images/third.jfif",
     text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
-  },
-  {
-    id: 9,
-    name: "bill anderson",
-    job: "the boss",
-    img:
-    "./images/fifth.jfif",
-    text:
-      "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+    "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
   },
 ];
 
@@ -98,8 +89,17 @@ window.addEventListener("DOMContentLoaded",()=>{
 nextbtn.addEventListener("click",()=>
 {
     index++;
-    index%=10
-    person()
+    index%=9;
+    person();
+});
+prevbtn.addEventListener("click",()=>
+{
+    index--;
+    if(index<0)
+    {
+        index+=9;
+    }
+    person();
 });
 
 
